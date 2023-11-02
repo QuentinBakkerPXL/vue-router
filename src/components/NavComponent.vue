@@ -3,9 +3,9 @@
         data() {
             return {
                 navImagePaths: [
-                    "src/assets/images/nav-img-1.jpg",
-                    "src/assets/images/nav-img-2.jpg",
-                    "src/assets/images/nav-img-3.jpg",
+                    "/src/assets/images/nav-img-1.jpg",
+                    "/src/assets/images/nav-img-2.jpg",
+                    "/src/assets/images/nav-img-3.jpg",
                 ],
                 navItems: [
                     {
