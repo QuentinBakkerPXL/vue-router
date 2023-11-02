@@ -178,7 +178,7 @@
                 &-item {
                     list-style: none;
                 }
-
+                
                 &-link {
                     @include textStyles(capitalize);
                     display: block;
@@ -189,11 +189,16 @@
                     text-decoration: none;
                     text-align: center;
                     transition: all .5s;
-
+                    
                     &:hover {
                         color: $color-primary;
                         letter-spacing: 4px;
                     }
+                }
+                
+                .router-link-active {
+                    color: $color-primary;
+                    letter-spacing: 4px;
                 }
             }
         }
