@@ -8,11 +8,26 @@
                     "src/assets/images/nav-img-3.jpg",
                 ],
                 navItems: [
-                    "Home",
-                    "Product",
-                    "Cart",
-                    "About us",
-                    "Contact"
+                    {
+                        path: "/",
+                        name: "Home"
+                    },
+                    {
+                        path: "/products",
+                        name: "Producten"
+                    },
+                    {
+                        path: "/cart",
+                        name: "Cart"
+                    },
+                    {
+                        path: "/about-us",
+                        name: "About"
+                    },
+                    {
+                        path: "/contact",
+                        name: "Contact"
+                    },
                 ]
             }
         }
@@ -42,7 +57,7 @@
                 <ul class="nav-list">
                     <li v-for="navItem in navItems"
                         class="nav-list-item">
-                        <a href="#" class="nav-list-link">{{ navItem }}</a>
+                        <router-link :to="navItem.path" class="nav-list-link">{{ navItem.name }}</router-link>
                     </li>
                 </ul>
             </div>
