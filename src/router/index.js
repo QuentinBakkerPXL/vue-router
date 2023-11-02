@@ -18,6 +18,7 @@ const router = createRouter({
         },
         {
             path: '/products/:price',
+            name: 'productType',
             component: ProductsView
         },
         {
