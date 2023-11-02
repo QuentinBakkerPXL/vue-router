@@ -4,6 +4,7 @@ import ProductsView from '@/views/ProductsView.vue'
 import CartView from '@/views/CartView.vue'
 import AboutView from '@/views/AboutView.vue'
 import ContactView from '@/views/ContactView.vue'
+import PageNotFoundView from '@/views/PageNotFoundView.vue'
 
 const router = createRouter({
     history: createWebHistory(),
@@ -32,6 +33,10 @@ const router = createRouter({
         {
             path: '/contact',
             component: ContactView
+        },
+        {
+            path: '/:notFound(.*)',
+            component: PageNotFoundView
         }
     ]
 })
